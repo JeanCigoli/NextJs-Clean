@@ -1,10 +1,16 @@
-import styled from 'styled-components'
+import Head from '../src/infra/components/Header';
+import { Container } from './_styled';
+import Header from '../src/patterns/Header';
+import About from '../src/patterns/About';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+const Home = () => {
+  return (
+    <Container>
+      <Head title='Jean Cigoli - Dev.' />
+      <Header />
+      <About />
+    </Container>
+  )
+};
 
-export default function Home() {
-  return <Title>My page</Title>
-}
+export default Home;
