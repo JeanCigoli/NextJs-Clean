@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import image from "next/image";
 
 export const Container = styled.section`
-  max-width: 80%;
-  width: auto;
+  max-width: 1500px;
+  width: 80%;
   height: calc(100% - 100px);
   display: flex;
   align-items: center;
@@ -51,12 +51,20 @@ export const AbsoluteCircle = styled.div`
   background-color: ${({ theme }) => theme.colors.blackMedium};
   border-radius: 50%;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const OneCircle = styled(AbsoluteCircle)`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   bottom: 200px;
+
+  svg {
+    font-size: ${({ theme }) => theme.fontSizes.xLarge};
+    color: ${({ theme }) => theme.colors.blueLight};
+  }
 `;
 
 export const TwoCircle = styled(AbsoluteCircle)`
@@ -64,6 +72,11 @@ export const TwoCircle = styled(AbsoluteCircle)`
   height: ${({ height }) => height};
   bottom: 20px;
   right: 0;
+
+  svg {
+    font-size: ${({ theme }) => theme.fontSizes.xxLarge};
+    color: ${({ theme }) => theme.colors.green};
+  }
 `;
 
 export const ThreeCircle = styled(AbsoluteCircle)`
@@ -71,4 +84,9 @@ export const ThreeCircle = styled(AbsoluteCircle)`
   height: ${({ height }) => height};
   top: 100px;
   right: 150px;
+
+  svg {
+    font-size: ${({ theme }) => theme.fontSizes.large};
+    color: ${({ theme }) => theme.colors.red};
+  }
 `;

@@ -1,7 +1,7 @@
 import React from "react";
 import { H1 } from "../foundation/Title";
 import Paragraph from "../foundation/Paragraph";
-
+import { DiReact, DiNodejsSmall, DiGit } from 'react-icons/di';
 import {
   Container,
   ContainerText,
@@ -27,6 +27,7 @@ const Header = () => {
         />
 
         <Paragraph
+          fontSize='default'
           text="I design and code beautifully simple things, and I love what I do."
           textAlign="left"
           color="whiteOpacity"
@@ -34,9 +35,17 @@ const Header = () => {
       </ContainerText>
 
       <ContainerImage>
-        <OneCircle width="100px" height="100px" />
-        <TwoCircle width="200px" height="200px" />
-        <ThreeCircle width="70px" height="70px" />
+        <OneCircle width="100px" height="100px"> 
+          <DiReact />
+        </OneCircle>
+
+        <TwoCircle width="200px" height="200px"> 
+          <DiNodejsSmall />
+        </TwoCircle>
+
+        <ThreeCircle width="70px" height="70px">
+          <DiGit />
+        </ThreeCircle>
         
         <Image
           src="/assets/logoLight.png"

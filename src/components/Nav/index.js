@@ -29,7 +29,7 @@ const Nav = () => {
           <BtnGithub>
             <DiGithubBadge />
 
-            <a>GitHub</a>
+            <a target="_blank">GitHub</a>
           </BtnGithub>
         </Link>
 

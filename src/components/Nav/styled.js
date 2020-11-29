@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.nav`
-  max-width: 80%;
-  width: auto;
+  max-width: 1500px;
+  width: 80%;
   height: 100px;
   display: flex;
   align-items: center;
@@ -64,6 +64,7 @@ export const BtnEmail = styled(Btn)`
   justify-content: center;
   color: ${({ theme }) => theme.colors.blueLight};
   border-radius: 50%;
+  
 
   svg {
     font-size: ${({ theme }) => theme.fontSizes.medium};

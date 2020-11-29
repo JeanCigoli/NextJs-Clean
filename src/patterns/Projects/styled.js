@@ -21,19 +21,8 @@ export const Separate = styled.div`
   width: 50%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   align-items: ${({ align }) => align};
   justify-content: ${({ justify }) => justify};
   padding: ${({ padding }) => padding};
 `;
-
-export const TextDev = styled.div`
-  width: fit-content;
-  padding: 5px;
-  background-color: ${({ theme }) => theme.colors.blueLight};
-  font-size: ${({ theme }) => theme.fontSizes.small};
-  color: ${({ theme }) => theme.colors.blackMedium};
-  font-weight: 400;
-  border-radius: ${({ theme }) => theme.spacing.shorter};
-`;
-
