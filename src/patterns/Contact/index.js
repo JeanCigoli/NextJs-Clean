@@ -10,7 +10,7 @@ import Form from '../../components/Form';
 
 const Contact = () => {
   return (
-    <Container>
+    <Container id='contact'>
       <Main>
         <Separate align="flex-start" justify="flex-start">
           <H2

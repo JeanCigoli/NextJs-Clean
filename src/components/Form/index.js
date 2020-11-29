@@ -17,7 +17,7 @@ const Form = () => {
     text: ''
   })
 
-  const { register, errors, handleSubmit } = useForm({
+  const { register, errors, reset, handleSubmit } = useForm({
     resolver: yupResolver(formSchema),
   });
 
@@ -45,6 +45,11 @@ const Form = () => {
 
     setLoad(false);
     setOpen(true);
+    reset({
+      name: '',
+      email: '',
+      message: ''
+    })
 
     setTimeout(() => {
       setOpen(false);
