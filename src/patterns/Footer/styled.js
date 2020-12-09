@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { devices } from '../../config/device';
 
 export const Container = styled.footer`
   width: 100%;
-  height: 400px;
+  height: auto;
   background-color: ${({ theme }) => theme.colors.blackDark};
   padding: 50px 0;
+
+  @media ${devices.mobileL} {
+    padding: 30px 0;
+  }
 `;
 
 export const Main = styled.section`
@@ -15,6 +20,11 @@ export const Main = styled.section`
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media ${devices.mobileL} {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const Icon = styled.div`
@@ -55,6 +65,12 @@ export const Separate = styled.div`
 
   ${Icon} + ${Icon} {
     margin-left: 20px;
+  }
+
+  @media ${devices.mobileL} {
+    width: 95%;
+    flex-direction: ${({ direction }) => direction};
+    justify-content: center;
   }
 `;
 

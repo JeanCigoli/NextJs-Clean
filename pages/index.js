@@ -19,7 +19,7 @@ const Home = () => {
       <Head title='Jean Cigoli - Dev.' />
       <Header />
       <About />
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
       <Footer />
     </Container>

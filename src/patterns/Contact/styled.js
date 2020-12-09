@@ -1,10 +1,16 @@
 import styled from 'styled-components';
+import { devices } from '../../config/device';
 
 export const Container = styled.section`
   width: 100%;
   height: 700px;
   background-color: ${({ theme }) => theme.colors.grayBold};
   padding: 50px 0;
+
+  @media ${devices.mobileL} {
+    height: auto;
+    padding: 20px 0;
+  }
 `;
 
 export const Main = styled.div`
@@ -15,6 +21,11 @@ export const Main = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media ${devices.mobileL} {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 export const Separate = styled.div`
@@ -25,6 +36,11 @@ export const Separate = styled.div`
   align-items: ${({ align }) => align};
   justify-content: ${({ justify }) => justify};
   padding: ${({ padding }) => padding};
+
+  @media ${devices.mobileL} {
+    width: 95%;
+    padding: 0 0;
+  }
 `;
 
 export const Icon = styled.div`
@@ -50,6 +66,10 @@ export const Icon = styled.div`
   :hover {
     background-color: ${({ theme }) => theme.colors.blackMedium};
   }
+
+  @media ${devices.mobileL} {
+    margin-bottom: 30px;
+  }
 `;
 
 export const SocialContainer = styled.div`
@@ -62,6 +82,10 @@ export const SocialContainer = styled.div`
 
   ${Icon} + ${Icon} {
     margin-left: 20px;
+  }
+
+  @media ${devices.mobileL} {
+    justify-content: center;
   }
 `;
 

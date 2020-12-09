@@ -14,12 +14,13 @@ const Footer = () => {
   return (
     <Container>
       <Main>
-        <Separate width="60%" justify="flex-start">
+        <Separate width="60%" direction="column" justify="flex-start">
           <Title>
             <strong>Cigoli</strong> Developer
           </Title>
 
           <Paragraph
+            textAlign='center'
             text={`${getFullYear()}. Todos os direitos reservados`}
             color="whiteOpacity"
             fontSize="small"

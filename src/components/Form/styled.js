@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { devices } from '../../config/device';
 
 const toast = keyframes`
   5% {
@@ -23,6 +24,10 @@ export const Container = styled.form`
 
   .animation {
     animation: ${toast} 5s linear;
+  }
+
+  @media ${devices.mobileL} {
+    padding: 20px;
   }
 `;
 
@@ -67,6 +72,13 @@ export const Toast = styled.div`
   p {
     font-size: ${({ theme }) => theme.fontSizes.small};
     color: ${({ theme }) => theme.colors.white};
+  }
+
+  @media ${devices.mobileL} {
+    width: 100%;
+    margin-left: -50%;
+    padding: 20px 10px;
+    height: auto;
   }
 `;
 

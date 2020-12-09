@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { devices } from '../../config/device';
 
 export const Container = styled.nav`
   max-width: 1500px;
@@ -8,12 +9,21 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media ${devices.mobileL} {
+    width: 95%;
+  }
 `;
 
 export const Title = styled.div`
   font-weight: lighter;
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSizes.medium};
+
+  @media ${devices.mobileL} {
+    width: 50%;
+    max-width: 50%;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -23,6 +33,10 @@ export const NavList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @media ${devices.mobileL} {
+    display: none;
+  }
 `;
 
 export const NavButtons = styled.div`
@@ -32,6 +46,11 @@ export const NavButtons = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @media ${devices.mobileL} {
+    width: 50%;
+    max-width: 50%;
+  }
 `;
 
 const Btn = styled.div`

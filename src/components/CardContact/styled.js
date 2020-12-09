@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { devices } from '../../config/device';
 
 export const Container = styled.div`
   width: 80%;
@@ -19,6 +20,12 @@ export const Container = styled.div`
   }
 
   :hover {
+    border: 1px solid ${({ theme }) => theme.colors.blueLight};
+    background-color: ${({ theme }) => theme.colors.blueLightOpacity};
+  }
+
+  @media ${devices.mobileL} {
+    width: 100%;
     border: 1px solid ${({ theme }) => theme.colors.blueLight};
     background-color: ${({ theme }) => theme.colors.blueLightOpacity};
   }
