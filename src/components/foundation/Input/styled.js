@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -38,5 +38,5 @@ export const Error = styled.p`
   position: absolute;
   top: 70px;
   color: ${({ theme }) => theme.colors.red};
-  font-size: ${({ theme }) => theme.fontSizes.tiny};
+  font-size: ${({ theme }) => theme.fontSizes.small};
 `;

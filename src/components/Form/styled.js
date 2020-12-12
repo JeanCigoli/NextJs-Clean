@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { devices } from '../../config/device';
+import styled, { keyframes } from "styled-components";
+import { devices } from "../../config/device";
 
 const toast = keyframes`
   5% {
@@ -44,11 +44,11 @@ export const Button = styled.button`
   cursor: pointer;
 
   :hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   :disabled {
-    opacity: .6;
+    opacity: 0.6;
   }
 `;
 
@@ -65,9 +65,8 @@ export const Toast = styled.div`
   top: -150px;
   left: 50%;
   margin-left: -250px;
-  box-shadow: 0.5px 0.5px 10px  ${({ theme }) => theme.colors.blackMedium};
+  box-shadow: 0.5px 0.5px 10px ${({ theme }) => theme.colors.blackMedium};
   padding: 0 30px;
-
 
   p {
     font-size: ${({ theme }) => theme.fontSizes.small};

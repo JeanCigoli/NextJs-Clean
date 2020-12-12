@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { devices } from '../../config/device';
+import styled from "styled-components";
+import { devices } from "../../config/device";
 
 export const Container = styled.section`
   width: 100%;
@@ -37,9 +37,17 @@ export const Separate = styled.div`
   justify-content: ${({ justify }) => justify};
   padding: ${({ padding }) => padding};
 
+  p {
+    padding-right: 30px;
+  }
+
   @media ${devices.mobileL} {
     width: 95%;
     padding: 0 0;
+
+    p {
+      padding-right: 0px;
+    }
   }
 `;
 
@@ -88,4 +96,3 @@ export const SocialContainer = styled.div`
     justify-content: center;
   }
 `;
-
