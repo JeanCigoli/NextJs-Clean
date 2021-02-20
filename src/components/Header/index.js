@@ -17,12 +17,12 @@ const Header = () => {
   return (
     <Container>
       <ContainerText>
-        <TextDev>Back-end and Front-end Developer</TextDev>
+        <TextDev>FullStack Developer</TextDev>
 
         <H1
           textAlign="left"
-          text="Falar é fácil. Me mostre o código"
-          fontSize="xLarge"
+          text="Encontre a oportunidade perfeita para montar seu negócio"
+          fontSize="large"
           color="white"
         />
 

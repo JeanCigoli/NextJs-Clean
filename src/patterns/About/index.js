@@ -14,14 +14,14 @@ const About = () => {
       <Main>
         <Separate align="center" justify="space-between" padding="0">
           <Card
-            title="Front-end"
-            text="Desenvolvo front-end com codificação super suave, impulsione seus negócios com otimização de SEO"
+            title="Web"
+            text="Desenvolvo com codificação super suave, impulsione seus negócios com otimização de SEO"
             icon={<FaCode />}
           />
 
           <Card
-            title="Back-end"
-            text="Crie sistemas com uma ótima integração com diversos recursos"
+            title="Sistemas"
+            text="Crie sistemas com uma ótima integração com diversos recursos, e melhor tudo do seu jeito"
             icon={<DiDatabase />}
           />
 
@@ -37,7 +37,7 @@ const About = () => {
 
           <H1
             color="white"
-            fontSize="xLarge"
+            fontSize="large"
             text="Olá! Eu sou o Jean Cigoli"
           />
 
